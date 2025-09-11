@@ -1,0 +1,110 @@
+/* ========================================
+   상품 상세 페이지 스타일 (이메일 호환)
+   ======================================== */
+
+/* 이메일 클라이언트 호환성을 위한 인라인 스타일 우선 사용 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background-color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* 테이블 기반 레이아웃을 위한 스타일 */
+table {
+    border-collapse: collapse;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+}
+
+/* 이메일 클라이언트에서 이미지 최적화 */
+img {
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 링크 스타일 */
+a {
+    color: #6366f1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 버튼 스타일 (이메일 호환) */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    mso-padding-alt: 0;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #5b5bd6, #7c3aed);
+}
+
+/* 반응형 디자인 (모바일) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .mobile-padding {
+        padding: 15px !important;
+    }
+    
+    .mobile-text {
+        font-size: 14px !important;
+    }
+    
+    .mobile-title {
+        font-size: 24px !important;
+    }
+}
+
+/* Outlook 호환성 */
+[owa] .container {
+    width: 600px !important;
+}
+
+/* Gmail 호환성 */
+u + .body .container {
+    width: 600px !important;
+}
+
+/* 다크모드 지원 */
+@media (prefers-color-scheme: dark) {
+    .dark-mode-bg {
+        background-color: #1f2937 !important;
+    }
+    
+    .dark-mode-text {
+        color: #f9fafb !important;
+    }
+}
+
+/* 인쇄 스타일 */
+@media print {
+    body {
+        background: white !important;
+    }
+    
+    .container {
+        box-shadow: none !important;
+        border: 1px solid #e5e7eb !important;
+    }
+}

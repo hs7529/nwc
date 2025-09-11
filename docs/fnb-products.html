@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F&B 상품 리스트 - Nextwave Creators</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/fnb-styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">Nextwave Creators</a>
+            <ul class="nav-links">
+                <li><a href="index.html#features">서비스</a></li>
+                <li><a href="index.html#products">상품</a></li>
+                <li><a href="index.html#process">진행방식</a></li>
+                <li><a href="index.html#contact">문의</a></li>
+            </ul>
+            <button class="cta-button">무료 상담 신청</button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">홈</a>
+                <span>/</span>
+                <span>F&B 상품</span>
+            </div>
+            <h1>F&B 상품 리스트</h1>
+            <p>인플루언서들을 위한 프리미엄 식음료 상품을 만나보세요</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-category="all">전체</button>
+                <button class="filter-tab" data-category="restaurant">맛집 메뉴</button>
+                <button class="filter-tab" data-category="beverage">음료</button>
+                <button class="filter-tab" data-category="snack">간식</button>
+                <button class="filter-tab" data-category="health">건강식품</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-header">
+                <h2>상품 목록</h2>
+                <div class="sort-options">
+                    <select class="sort-select">
+                        <option value="popular">인기순</option>
+                        <option value="newest">최신순</option>
+                        <option value="price-low">가격 낮은순</option>
+                        <option value="price-high">가격 높은순</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid-detailed">
+                <!-- 상품 카드들 - 구조만 생성 -->
+                <a href="product-detail.html?id=1" class="product-card-link">
+                    <div class="product-card-detailed" data-category="restaurant">
+                        <div class="product-image-detailed">
+                            <div class="product-badge new">NEW</div>
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">맛집 메뉴</div>
+                            <h3 class="product-title">춘천닭갈비 500g x 4팩</h3>
+                            <p class="product-description">감칠맛 일품인 춘천닭갈비! 매콤달콤한 양념과 부드러운 닭고기의 완벽한 조화</p>
+                            <div class="product-price">₩45,000</div>
+                            <div class="product-stats">
+                                <span class="rating">⭐ 4.8 (189)</span>
+                                <span class="sales">판매 856개</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="product-detail2.html" class="product-card-link">
+                    <div class="product-card-detailed" data-category="meat">
+                        <div class="product-image-detailed">
+                            <div class="product-badge best">BEST</div>
+                            <i class="fas fa-bacon"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">육류</div>
+                            <h3 class="product-title">돼지왕구이 500g x 4팩</h3>
+                            <p class="product-description">입에서 사르르 녹는 부드럽고 쫄깃한 식감의 프리미엄 돼지고기</p>
+                            <div class="product-price">₩29,900</div>
+                            <div class="product-stats">
+                                <span class="rating">⭐ 4.9 (156)</span>
+                                <span class="sales">판매 623개</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 더 많은 상품 카드들... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>인플루언서 등록하고 상품 받아보세요!</h2>
+            <p>무료로 상품을 받아보고 리뷰를 작성해보세요</p>
+            <button class="btn-primary">인플루언서 등록하기</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nextwave Creators</h3>
+                    <p>인플루언서 커머스의 새로운 패러다임을 제시하는 통합 플랫폼입니다.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>서비스</h3>
+                    <p><a href="#">인플루언서 등록</a></p>
+                    <p><a href="#">상품 큐레이션</a></p>
+                    <p><a href="#">마케팅 지원</a></p>
+                    <p><a href="#">성과 분석</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>고객지원</h3>
+                    <p><a href="#">자주 묻는 질문</a></p>
+                    <p><a href="#">1:1 문의</a></p>
+                    <p><a href="#">이용 가이드</a></p>
+                    <p><a href="#">공지사항</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>연락처</h3>
+                    <p>📞 02-1234-5678</p>
+                    <p>📧 info@nextwavecreators.com</p>
+                    <p>🏢 서울시 강남구 테헤란로 123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nextwave Creators. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/fnb-script.js"></script>
+</body>
+</html>
